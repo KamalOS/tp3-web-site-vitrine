@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | ensetcreative</title>
+    <meta name="description" content="ensetcreative - Agence Web avant-gardiste créant des expériences digitales inoubliables.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="ensetcreative - Création de Sites Web">
+    <meta property="og:description" content="Des expériences digitales responsives, fluides et esthétiques pour votre entreprise.">
+    <meta property="og:image" content="images/hero-large.png">
+    <meta property="og:url" content="https://www.ensetcreative.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo">ensetcreative.</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="pages/about.html">À propos</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/gallery.html">Galerie</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home avec hero image responsive -->
+        <section class="hero">
+            <picture>
+                <!-- responsive image handling avec srcset et medium -->
+                <source media="(min-width: 1024px)" srcset="images/hero-large.png">
+                <source media="(min-width: 768px)" srcset="images/hero-medium.png">
+                <img src="images/hero-small.png" alt="Espace de travail moderne et technologique">
+            </picture>
+            <div class="hero-content">
+                <h1>L'innovation par le design</h1>
+                <p>Nous concevons des sites web performants, esthétiques et optimisés pour le futur de votre entreprise.</p>
+                <a href="pages/services.html" class="btn">Découvrir nos services</a>
+            </div>
+        </section>
+
+        <!-- Vidéo de présentation -->
+        <section class="video-promo">
+            <h2>Notre Vision</h2>
+            <!-- Video en autoplay, muted, loop -->
+            <video autoplay muted loop playsinline class="promo-video">
+                <!-- Video W3C pour démonstration -->
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </section>
+
+        <!-- Témoignages -->
+        <section class="testimonials">
+            <h2>Ils nous font confiance</h2>
+            <div class="grid">
+                <div class="card">
+                    <blockquote>"Lumina a transformé notre présence en ligne. Le design est époustouflant et nos ventes ont doublé !"</blockquote>
+                    <p style="margin-top: 20px; color: var(--secondary);"><strong>- Jean Dupont, TechStart</strong></p>
+                </div>
+                <div class="card">
+                    <blockquote>"Une équipe réactive et créative. Ils ont compris nos besoins dès la première réunion."</blockquote>
+                    <p style="margin-top: 20px; color: var(--secondary);"><strong>- Sophie Martin, ÉcoBoutique</strong></p>
+                </div>
+                <div class="card">
+                    <blockquote>"Le souci du détail et les animations fluides font vraiment la différence face à la concurrence."</blockquote>
+                    <p style="margin-top: 20px; color: var(--secondary);"><strong>- Marc Dubois, FinancePlus</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="sitemap">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pages/about.html">À propos</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/gallery.html">Galerie</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>Mentions légales</h3>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions générales d'utilisation</a></li>
+                    <li><a href="#">Gestion des cookies</a></li>
+                </ul>
+            </div>
+            <div class="contact-short">
+                <h3>Contact</h3>
+                <p style="color: var(--text-light); margin-bottom: 8px;">Email : kamal@ensetcreative.com</p>
+                <p style="color: var(--text-light);">Téléphone : +212 6 00 00 00 00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="footer-year">2026</span> ensetcreative. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
