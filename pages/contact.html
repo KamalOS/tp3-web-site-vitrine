@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ensetcreative</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="../index.html" class="logo">ensetcreative.</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-infos">
+                <h1 style="text-align: left;">Parlons de votre projet</h1>
+                <p>N'hésitez pas à nous contacter pour toute demande de devis ou de partenariat. Notre équipe vous répondra dans les plus brefs délais.</p>
+                
+                <div style="margin: 40px 0;">
+                    <h3 style="color: var(--text-white); margin-bottom: 15px;">Coordonnées</h3>
+                    <p style="margin-bottom: 10px;">📍 ENSET Mohammedia, Maroc</p>
+                    <p style="margin-bottom: 10px;">📞 +212 6 00 00 00 00</p>
+                    <p>✉️ kamal@ensetcreative.com</p>
+                </div>
+
+                <!-- iframe Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=ENSET%20Mohammedia&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <!-- Formulaire contenant tous les inputs demandés -->
+                <form action="#" method="POST" class="contact-form" enctype="multipart/form-data">
+                    <h2 style="text-align: left;">Envoyez-nous un message</h2>
+                    
+                    <div class="form-group-inline">
+                        <div style="flex: 1;">
+                            <label for="nom" style="color: var(--text-white); display: block; margin-bottom: 5px;">Nom complet / Entreprise</label>
+                            <input type="text" id="nom" name="nom" required placeholder="Votre Nom">
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="email" style="color: var(--text-white); display: block; margin-bottom: 5px;">Adresse Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Votre Email">
+                        </div>
+                    </div>
+                    
+                    <label for="phone" style="color: var(--text-white); display: block; margin-bottom: 5px;">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ex: +212...">
+                    
+                    <label for="secret_code" style="color: var(--text-white); display: block; margin-bottom: 5px;">Code secret d'accès client (Optionnel)</label>
+                    <input type="password" id="secret_code" name="secret_code" placeholder="Votre code">
+                    
+                    <div class="form-group-inline">
+                        <div style="flex: 1;">
+                            <label for="rendezvous_date" style="color: var(--text-white); display: block; margin-bottom: 5px;">Date pour un rendez-vous / réunion</label>
+                            <input type="date" id="rendezvous_date" name="rendezvous_date" title="Date souhaitée pour un rendez-vous">
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="rendezvous_time" style="color: var(--text-white); display: block; margin-bottom: 5px;">Heure pour le rendez-vous</label>
+                            <input type="time" id="rendezvous_time" name="rendezvous_time" title="Heure souhaitée">
+                        </div>
+                    </div>
+
+                    <label for="budget" style="color: var(--text-white); display: block; margin-bottom: 5px;">Budget estimé pour ce projet (MAD / €)</label>
+                    <input type="number" id="budget" name="budget" min="1000" step="500" placeholder="Ex: 5000">
+
+                    <label for="website" style="color: var(--text-white); display: block; margin-bottom: 5px;">URL de votre site web actuel (si existant)</label>
+                    <input type="url" id="website" name="website" placeholder="https://...">
+
+                    <label style="color: var(--text-white); margin-top: 10px; display: block;">Type de service recherché :</label>
+                    <select name="service_type">
+                        <option value="vitrine">Site Vitrine</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="design">UI/UX Design</option>
+                        <option value="seo">Audit SEO</option>
+                    </select>
+
+                    <label style="color: var(--text-white); margin-top: 10px;">Niveau d'importance (1-10) :</label>
+                    <input type="range" name="importance" min="1" max="10" value="5">
+
+                    <div style="display: flex; gap: 20px; color: var(--text-light); margin-top: 10px;">
+                        <label><input type="radio" name="urgence" value="normale" checked> Projet standard</label>
+                        <label><input type="radio" name="urgence" value="urgente"> Projet urgent !</label>
+                    </div>
+
+                    <label style="color: var(--text-white); margin-top: 10px;">Couleur dominante souhaitée :</label>
+                    <input type="color" name="brand_color" value="#8a2be2">
+
+                    <label style="color: var(--text-white); margin-top: 10px;">Document annexe (Cahier des charges) :</label>
+                    <input type="file" name="attachment" accept=".pdf,.png,.jpg">
+
+                    <textarea name="message" required placeholder="Décrivez les détails de votre projet ici..."></textarea>
+
+                    <label style="color: var(--text-light); font-size: 0.9rem;">
+                        <input type="checkbox" name="newsletter" value="yes"> Je m'abonne à la newsletter ensetcreative.
+                    </label>
+
+                    <div class="form-group-inline" style="margin-top: 20px;">
+                        <button type="submit" class="btn" style="flex: 1;">Envoyer le message</button>
+                        <input type="reset" value="Effacer le formulaire" class="btn" style="background: transparent; border: 1px solid var(--text-muted); color: var(--text-muted);">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="sitemap">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>Mentions légales</h3>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions générales d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+             <p>&copy; <span class="footer-year">2026</span> ensetcreative. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
