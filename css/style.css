@@ -234,6 +234,67 @@ figcaption h3 {
   margin-bottom: 5px;
 }
 
+/* Services - Details/Summary */
+details {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: var(--transition);
+}
+
+details:hover {
+  border-color: var(--primary);
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-white);
+  outline: none;
+}
+
+details p {
+  margin-top: 15px;
+  color: var(--text-light);
+}
+
+/* Pricing Table */
+.pricing-table-container {
+  overflow-x: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+  background: rgba(138, 43, 226, 0.2);
+  color: var(--text-white);
+  font-size: 1.2rem;
+}
+
+td.promo {
+  background: linear-gradient(45deg, rgba(138,43,226,0.2), rgba(0,210,255,0.2));
+  font-weight: bold;
+  color: var(--secondary);
+}
+
 @media (max-width: 768px) {
   .contact-section { grid-template-columns: 1fr; }
   .main-header { flex-direction: column; gap: 15px; padding: 15px; }
